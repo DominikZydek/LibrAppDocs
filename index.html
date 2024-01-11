@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentacja - LibrApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="heading flex">
+        <img class="logo" src="images/logo_small.png" alt="Logo LibrApp">
+        <h1>Dokumentacja LibrApp</h1>
+    </div>
+    <div class="main">
+        <ul class="nav">
+            <li><a id="general-button" href="#">Ogólne</a></li>
+            <li><a id="register-button" href="#">Ekran rejestracji</a></li>
+            <li><a id="login-button" href="#">Ekran logowania</a></li>
+            <li><a id="user-button" href="#">Ekran użytkownika</a></li>
+            <li><a id="admin-button" href="#">Ekran administratora</a></li>
+        </ul>
+        <div class="description general">
+            <h2>Informacje ogólne</h2>
+            <br><br>
+            <p>
+                LibrApp jest aplikacją desktopową działającą na systemach Windows. Głównym założeniem aplikacji jest ułatwienie pracownikom biblioteki zarządzania zbiorami i kontami czytelników, a
+                czytelnikom szybkie i intuicyjne wypożyczanie, rezerwowanie i oddawanie książek. Aplikacja oferuje szeroki wachlarz funkcjonalności dla użytkowników 
+                (więcej informacji w odpowiednich sekcjach).<br><br>Aplikacja jest projektem studenckim, którego autorami są Dominik Żydek, Arnika Ząbroń i Kacper Przybylski. 
+                Użyte technologie to: .NET (WPF), C#, XAML i SQL (SQLite).
+            </p>
+            <br><br>
+            <h2>Pierwsze uruchomienie</h2>
+            <br><br>
+            <p>
+                sekcja do uzupełnienia
+            </p>
+            <br><br>
+            <h2>Podziękowania</h2>
+            <br><br>
+            <p>
+                Dziękujemy za przeczytanie dokumentacji i zachęcamy do użycia LibrApp.<br><br>
+                Autorzy: Dominik Żydek, Arnika Ząbroń, Kacper Przybylski.
+            </p>
+        </div>
+        <div class="description register">
+            <h2>Rejestracja</h2>
+            <br><br>
+            <p>
+                Jednym z oferowanych przez LibrApp sposobów dodania nowego użytkownika jest samodzielna rejestracja.<br><br>Rejestracja odbywa się przy pomocy intuicyjnego formularza.
+                Formularz jest wyposażony w mechanizm walidacji danych użytkownika.
+            </p>
+            <br><br>
+            <div class="img-container"><img src="images/register_screen.png" alt="Ekran rejestracji"></div>
+            <br><br>
+            <div class="img-container"><img src="images/register_error1.png" alt="Przykład walidacji danych"></div>
+            <br><br>
+            <div class="img-container"><img src="images/register_error2.png" alt="Przykład walidacji danych"></div>
+        </div>
+        <div class="description login">
+            <h2>Logowanie</h2>
+            <br><br>
+            <p>
+                LibrApp oferuje logowanie zarówno dla użytkowników jak i pracowników. Służą do tego dedykowane przyciski.<br><br>Aplikacja jest wyposażona również w mechanizm 
+                walidacji danych.
+            </p>
+            <br><br>
+            <div class="img-container"><img src="images/login_screen.png" alt="Ekran rejestracji"></div>
+            <br><br>
+            <div class="img-container"><img src="images/login_error.png" alt="Przykład walidacji danych"></div>
+        </div>
+        <div class="description user">
+            <h2>Strona główna</h2>
+            <br><br>
+            <p>
+                Po zalogowaniu użytkownik może od razu przejść do przeglądania zbiorów biblioteki. Z tego poziomu może wypożyczyć dostępną książkę lub zarezerwować wypożyczoną. 
+                Ponadto może wybrać z 4 dostępnych ekranów: Strona główna, Wypożyczone, Zarezerwowane,  Informacje o koncie.<br><br>
+                Użytkownik ma także opcję wylogowania się z aplikacji.
+            </p>
+            <br><br>
+            <div class="img-container"><img src="images/user_view1.png" alt="Strona główna"></div>
+            <br><br>
+            <h2>Wypożyczone</h2>
+            <br><br>
+            <p>
+                W sekcji Wypożyczone pojawiają się wypożyczone przez użytkownika książki. Użytkownik może zwrócić książkę, przedłużyć okres wypożyczenia (jednokrotnie), 
+                lub monitorować daty, tak aby książkę zwrócić o czasie.
+            </p>
+            <br><br>
+            <div class="img-container"><img src="images/user_view2.png" alt="Wypożyczone"></div>
+            <br><br>
+            <h2>Zarezerwowane</h2>
+            <br><br>
+            <p>
+                W sekcji Zarezerwowane użytkownik ma wgląd w zarezerwowane tytuły. Rezerwacja działa na wypożyczonych książkach, tak aby zagwarantować wypożyczenie 
+                od razu po zwrocie.<br><br>Użytkownik może wypożyczyć książkę (jeżeli jest już dostępna), lub usunąć rezerwację w razie, gdyby zmienił zdanie.
+            </p>
+            <br><br>
+            <div class="img-container"><img src="images/user_view3.png" alt="Zarezerwowane"></div>
+            <br><br>
+            <h2>Informacje o koncie</h2>
+            <br><br>
+            <p>
+                Ekran Informacje o koncie umożliwia użytkownikom wgląd w swoje dane. Może je również edytować.<br><br>
+                Ponadto użytkownik może kontrolować opłaty za przetrzymanie książki a także ma informacje o ilości wypożyczonych i zarezerwowanych książek.
+            </p>
+            <br><br>
+            <div class="img-container"><img src="images/user_view4.png" alt="Informacje o koncie"></div>
+        </div>
+        <div class="description admin">
+            <p>
+                <h2>Strona główna</h2>
+                <br><br>
+                <p>
+                    Po zalogowaniu przez pracownika, wyświetla się przydatny dashboard do obsługi zbiorów. Administrator może modyfikować dostępne tytuły, dodać nowe lub usunąć.<br><br>
+                    Może również wylogować się z aplikacji.
+                </p>
+                <br><br>
+                <div class="img-container"><img src="images/admin_view1.png" alt="Strona główna"></div>
+                <br><br>
+                <div class="img-container"><img src="images/admin_view1_1.png" alt="Modyfikacja książki"></div>
+                <br><br>
+                <div class="img-container"><img src="images/admin_view1_2.png" alt="Dodawanie książki"></div>
+                <br><br>
+                <h2>Użytkownicy</h2>
+                <br><br>
+                <p>
+                    W tej sekcji pracownik może ręcznie modyfikować dane o użytkownikach w razie błędów lub na życzenie użytkownika.<br><br>
+                    Może również usunąć użytkownika (co jest jedyną opcją usunięcia konta).
+                </p>
+                <br><br>
+                <div class="img-container"><img src="images/admin_view2.png" alt="Użytkownicy"></div>
+                <br><br>
+                <h2>Wypożyczenia</h2>
+                <br><br>
+                <p>
+                    W sekcji Wypożyczenia administrator ma wgląd w obecne wypożyczenia. Może monitorować zbliżające się daty zwrotu i przedłużyć je bądź
+                    powiadomić użytkownika o zbliżających się terminach.<br><br>Może również usuwać wypożyczenia w razie błędu systemu.
+                </p>
+                <br><br>
+                <div class="img-container"><img src="images/admin_view3.png" alt="Wypożyczenia"></div>
+                <br><br>
+                <h2>Rezerwacje</h2>
+                <br><br>
+                <p>
+                    W tej sekcji pracownik biblioteki może kontrolować rezerwacje użytkowników. Może je modyfikować lub przedłużać na życzenie użytkownika.<br><br>
+                    Może również ręcznie usunąć rezerwację w razie błędu.
+                </p>
+                <br><br>
+                <div class="img-container"><img src="images/admin_view4.png" alt="Rezerwacje"></div>
+            </p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
