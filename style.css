@@ -25,6 +25,17 @@ a:hover {
     color: #9ea7cc;
 }
 
+.download {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: #707db2 1px solid;
+    border-radius: 25px;
+}
+
+.download:hover {
+    background-color: #707db2;
+}
+
 .logo {
     width: 100px;
     height: 100px;
